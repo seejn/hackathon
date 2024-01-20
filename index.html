@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="hospital.js">
+</head>
+<body>
+    <div class="first_container" id="home">
+        <nav>
+           <a href="index.html"><h1>Hospital<span> Finder</span></h1></a>
+            <div class="navbar">
+                    <ul><a href="index.html" class="home">Home</a></ul>
+                    <ul>Services</ul>
+                    <ul>
+                        <div class="dropdown">
+                            <button class="dropbtn"> Your Health Issue</button>
+                            <div class="dropdown-content">
+                              <a href="hospitals/eyehospitals.html" id="hospitalList">Eye</a>
+                              <a href="hospitals/ENThospitals.html">Ear, Nose, Throat</a>
+                              <a href="hospitals/hearthospitals.html">Heart</a>
+                              <a href="hospitals/skinhospitals.html">Skin</a>
+                            </div>
+                          </div>
+                    </ul>
+                    <ul>Contact Us</ul>
+            </div>
+        </nav>
+        <div class="text">
+        <h1>Caring for Good</h1><br>
+        <h2>Health Is Priceless</h2>
+        <p>Managing good health is invaluable as it forms
+            the cornerstone of a fulfilling vibrant life.
+            Physical well-being not only enhances our daily experiences
+            but also contribute significantly to our mental and emotional states. 
+        </p>
+        </div>
+       <div class="img_doc1">
+       <img src="d1.png" alt="doctor photo">
+       </div>
+    </div>
+   <div class="second_container" id="services">
+    <h1>Our Services</h1>
+    <div class="card_container">
+    <div class="card1">
+        <img src="d2.png" alt="">
+        <h2>Appointment </h2>
+        <p>Health is a  state of complete physical, mental adn social well-being and not merely the absence of diseases or infirmity.
+            User can get appointment for doctors.</p>
+    </div>
+    <div class="card2">
+        <img src="hospital.jpg" alt="">
+        <h2>Hospital Info</h2>
+        <p>Health is a  state of complete physical, mental adn social well-being and not merely the absence of diseases or infirmity.
+            User can get information about different hospitals.</p>
+    </div>
+    <div class="card3">
+        <img src="d3.png" alt="">
+        <h2>Doctor Info</h2>
+        <p>Health is a  state of complete physical, mental adn social well-being and not merely the absence of diseases or infirmity.
+            User can get information about various doctors with their speciality.</p>
+    </div>
+    </div>
+    </div>
+   <div class="third_container" id="contact">
+    <h1>Contact US</h1>
+    <div class="contactus">
+    <div class="left_container">
+    <h1>Let's get in touch</h1>
+    <p>We are open for any suggestion or just to have a chat</p>
+    <i class='bx bxs-map' id="ad">
+        <p>Address: Balaju,Kathmandu Nepal</p>
+    </i>
+    <i class='bx bxs-phone' id="phone">
+        <p>Phone: +977 9865323322</p>
+    </i>
+    <i class='bx bx-envelope' id="elogo">
+        <p>Email: HospitalFinder@gmail.com</p>
+    </i>
+    <i class='bx bx-world' id="website">
+        <p>Website: HospitalFinder.com</p>
+    </i>
+    </div>
+    <div class="right_container">
+    <h1>Get in touch</h1>
+    <div class="input">
+    <input type="text" id="fname" placeholder="First Name"><br>
+     <input type="text" id="lname" placeholder="Last Name"><br>
+     <input type="email" id="email" placeholder="Email"><br>
+     <input type="text" id="msg" placeholder="Your Message"><br>
+     <button id="contactus_btn">Send Message</button>
+    </div>
+    </div>
+    </div>
+    </div>
+   <div class="forth_container" id="footer">
+    <div class="first_info">
+        <h1>Hospital<span> Finder</span></h1>
+        <h6>A website that enables user to find out their health related issues and choose the hospital. Moreover you can also choose a doctor and make appointment.</h6>
+    </div>
+    <div class="second_info">
+        <h1>Navigation</h1>
+        <ul>Contact Us</ul>
+        <ul>Services</ul>
+        <ul>Home</ul>
+    </div>
+    <div class="third_info">
+        <h1>Services</h1>
+        <ul>Hospital Info</ul>
+        <ul>Doctor Info</ul>
+        <ul>Appointment</ul>
+    </div>
+    <div class="forth_info">
+        <h1>Social Media</h1>
+        <div class="socialmedia_icons">
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square'></i></a>
+        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp-square'></i></a>
+        </div>
+    </div>
+   </div>
+   <div class="copyright_section">
+    <h3>Copyright &COPY2024 All rights reserved | <span>Hospital Finder</span></h3>
+   </div>
+</body>
+<script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    document.querySelector('.navbar ul:nth-child(2)').addEventListener('click', function() {
+        scrollToSection('services');
+    });
+
+    document.querySelector('.navbar ul:nth-child(4)').addEventListener('click', function() {
+        scrollToSection('contact');
+    });
+
+    document.querySelector('.second_info ul:nth-child(2)').addEventListener('click', function() {
+        scrollToSection('contact');
+    });
+
+    document.querySelector('.second_info ul:nth-child(3)').addEventListener('click', function() {
+        scrollToSection('services');
+    });
+
+    document.querySelector('.second_info ul:nth-child(4)').addEventListener('click', function() {
+        scrollToSection('home');
+    });
+
+</script>
+</html>

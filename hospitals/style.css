@@ -1,0 +1,69 @@
+body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: 'Arial', sans-serif;
+          overflow: hidden;
+        }
+
+        .container {
+          display: flex;
+          height: 100vh;
+        }
+
+        #map {
+          flex: 1;
+        }
+
+        #hospital-info {
+          width: 300px;
+          padding: 16px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          overflow-y: auto;
+          background-color: #fff;
+        }
+
+        .card-container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .card {
+          cursor: pointer;
+          background-color: #f8f9fa;
+          border: 1px solid #ced4da;
+          border-radius: 8px;
+          margin-bottom: 16px;
+          padding: 16px;
+          transition: transform 0.3s;
+        }
+
+        .card:hover {
+          transform: scale(1.05);
+        }
+
+        h2 {
+          margin-top: 0;
+          color: #007bff;
+        }
+
+        p {
+          margin: 8px 0;
+          color: #555;
+        }
+
+        /* Mapbox styles */
+        .mapboxgl-popup {
+          max-width: 200px;
+          font-family: 'Arial', sans-serif;
+        }
+
+        .mapboxgl-popup-content {
+          text-align: center;
+          color: #333;
+        }
+
+        .mapboxgl-popup-close-button {
+          font-size: 14px;
+          color: #333;
+        }
