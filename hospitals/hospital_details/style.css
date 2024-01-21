@@ -5,6 +5,25 @@ body {
             background-color: #f4f4f4;
         }
 
+    .appointment-button {
+      outline: none;
+      border: none;
+      display: block;
+      padding: 15px 30px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #ffffff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .appointment-button:hover {
+      background-color: #2980b9;
+    }
+
         header {
             background-color: #3498db;
             color: #fff;
@@ -49,6 +68,10 @@ body {
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
         }
 
+        .doctor-card > *:not(button){
+            padding: 5px 0;
+        }
+
         .doctor-card img {
             width: 100%;
             border-radius: 4px;
@@ -65,3 +88,68 @@ body {
         .specialization {
             color: #555;
         }
+
+.success-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #96be25;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  animation: fadeOut 3s ease-out; /* Adjust the duration as needed */
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modalActive{
+    display: block;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #cc0000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, button {
+  margin-bottom: 15px;
+  padding: 8px;
+}

@@ -1,10 +1,26 @@
+const hostipalArray = {
+    15: 'diskin.html',
+    10: 'sahidgangalal.html',
+    13: 'entservice.html',
+    12: 'kathmanduent.html',
+    11: 'nationalent.html',
+    9: 'entcare.html',
+    19: 'nepaleye.html',
+    18: 'ags.html',
+    17:'dristi.html', 
+    7:'hams.html', 
+    14:'nepalskinhospital.html',
+    16:'nepalskincare.html',
+    8:'norvic.html'
+}
+
 const createLayout = (data) => {
     const doctorList = (doctors) => {
         return doctors.map(doctor => `
               <li>
                 <strong>${doctor.name}</strong>
-                <p>${doctor.experience}</p>
                 <p>${doctor.qualification}</p>
+                <p>Experience: ${doctor.experience}</p>
                 <!-- Add more doctor information as needed -->
               </li>
             `).join('');
@@ -19,6 +35,8 @@ const createLayout = (data) => {
               <ul>
                 ${doctorList(data.doctors || [])}
               </ul>
+              <a href="hospital_details/${hostipalArray[data.id]}" class="appointment-button">More Details...</a>
+
             </div>
           `;
 }
