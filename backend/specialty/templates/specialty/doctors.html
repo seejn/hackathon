@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	{{hospitals}}
+	<table border="1" cellspacing="0" cellpadding="10">
+		<tr>
+			<th colspan="3">Hospitals</th>
+		</tr>
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>action</th>
+		</tr>
+		{% for hospital in hospitals %}
+		<tr>
+			<td>{{hospital.id}}</td>
+			<td>{{hospital.name}}</td>
+			<td><a href="{% url 'doctors' hospital.id %}">View Doctors</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
