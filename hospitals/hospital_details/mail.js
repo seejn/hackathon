@@ -1,0 +1,3 @@
+const mail = (email, msg) => {
+    
+}

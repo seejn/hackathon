@@ -1,7 +1,7 @@
 
 function hospital_list(){
     // Fetch hospital data from the API
-    fetch('http://192.168.207.183:8000/specialty/9/Hospital_Json_Response')
+    fetch('http://localhost:8000/specialty/9/Hospital_Json_Response')
        .then(response => response.json())
        .then(data => displayHospitals(data))
        .catch(error => console.error('Error fetching hospital data:', error));

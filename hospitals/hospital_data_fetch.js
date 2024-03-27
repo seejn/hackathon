@@ -32,7 +32,7 @@ const createLayout = (data) => {
               <p>Address: ${data.location}</p>
               <p>Phone: +${data.contact}</p>
               <h4>Doctors:</h4>
-              <ul>
+              <ul type='none'>
                 ${doctorList(data.doctors || [])}
               </ul>
               <a href="hospital_details/${hostipalArray[data.id]}" class="appointment-button">More Details...</a>

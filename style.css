@@ -157,6 +157,10 @@ p{
     height: 300px;
     width: 25%;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.card1:hover{
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -192,6 +196,11 @@ p{
     height: 300px;
     width: 25%;
     margin-left: 85px;
+    cursor:pointer;
+}
+
+
+.card2:hover{
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -227,11 +236,14 @@ p{
     height: 300px;
     width: 25%;
     margin-left: 85px;
+    cursor: pointer;
+}
+
+.card3:hover{
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .card3 img{
     height:80px;
     border: 1px solid cornflowerblue;
@@ -461,7 +473,7 @@ input{
 }
 
 .second_info h1{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
@@ -485,7 +497,7 @@ input{
 }
 
 .third_info h1{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
 
@@ -510,7 +522,7 @@ input{
 
 .forth_info h1{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .socialmedia_icons{
